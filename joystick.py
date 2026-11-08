@@ -19,9 +19,9 @@ class Joystick:
         self.adcx.width(ADC.WIDTH_12BIT)
         self.adcy.width(ADC.WIDTH_12BIT)
         
-        self.centerx = 30000
-        self.centery = 29500
-        self.deadzone = 1000
+        self.centerx = 32000
+        self.centery = 32000
+        self.deadzone = 3000
         
     def read(self):
         return self.adcx.read_u16(), self.adcy.read_u16()
